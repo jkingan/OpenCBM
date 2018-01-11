@@ -110,7 +110,8 @@ PREFIX = /opt/opencbm
 OPENCBM_CONFIG_PATH = $(PREFIX)/etc
 
 # use MacPort's libusb-legacy for now
-LIBUSB_CONFIG  = /opt/local/bin/libusb-legacy-config
+#LIBUSB_CONFIG  = /opt/local/bin/libusb-legacy-config
+LIBUSB_CONFIG  = /opt/local/bin/libusb-config
 LIBUSB_CFLAGS  = $(shell $(LIBUSB_CONFIG) --cflags)
 LIBUSB_LDFLAGS = $(shell $(LIBUSB_CONFIG) --libs)
 
